@@ -81,7 +81,7 @@ public class SzoftverleltarDbManager {
                             "FROM telepites AS t " +
                             "INNER JOIN szoftver AS s ON s.id = t.szoftverid " +
                             "INNER JOIN gep AS g ON g.id = t.gepid " +
-                            "GROUP BY s.nev " +
+                            "GROUP BY s.nev, s.kategoria " +
                             "ORDER BY s.nev"
             );
             List<Install> installList = new ArrayList<>();

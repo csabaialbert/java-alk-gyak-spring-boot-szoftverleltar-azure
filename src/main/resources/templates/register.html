@@ -19,11 +19,11 @@
         <form action="#" th:action="@{/registration_processing}" th:object="${reg}" method="post">
             <fieldset>
                 <legend class="contenttxt">Regisztráció</legend>
-                <p class="contenttxt"><input type="text" th:field="*{username}" placeholder="Felhasználónév" required>
+                <p class="contenttxt"><input class="contenttxt" style="background-color: #111111;" type="text" th:field="*{username}" placeholder="Felhasználónév" required>
                 </p>
-                <p class="contenttxt"><input type="email" th:field="*{email}" placeholder="Email cím" required></p>
-                <p class="contenttxt"><input type="password" th:field="*{password}" placeholder="Jelszó" required></p>
-                <p class="contenttxt"><input type="submit" value="Regisztráció"></p>
+                <p class="contenttxt"><input class="contenttxt" style="background-color: #111111;" type="email" th:field="*{email}" placeholder="Email cím" required></p>
+                <p class="contenttxt"><input class="contenttxt" style="background-color: #111111;" type="password" th:field="*{password}" placeholder="Jelszó" required></p>
+                <p class="contenttxt"><input class="contenttxt"  type="submit" value="Regisztráció"></p>
             </fieldset>
         </form>
     </div>
