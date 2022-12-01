@@ -157,7 +157,7 @@ public class HomeController {
     @GetMapping("/rest/visual")
     public static String Rest(Model model) throws ClientProtocolException, IOException {
         HttpClient client = new DefaultHttpClient();
-        HttpGet request = new HttpGet("http://localhost:1000/rest");
+        HttpGet request = new HttpGet("https://szoftverleltarcsabaialbertadamvarhegyi.azurewebsites.net/rest");
         HttpResponse response = client.execute(request);
         BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
         String line = "";
